@@ -17,6 +17,11 @@
                 placeholder="Book Price" name="price" <%if(title === "Edit Book"){%>value="<%= books.Price %>"<%}%> required>
               </div>
               <div class="form-group">
+                <label for="DescriptionTextField">Description</label>
+                <input type="textArea" class="form-control" id="DescriptionTextField"
+                placeholder="Book Description" name="description" <%if(title === "Edit Book"){%>value="<%= books.Description %>"<%}%>required>
+              </div>
+              <div class="form-group">
                 <label for="AuthorTextField">Author</label>
                 <input type="text" class="form-control" id="AuthorTextField"
                 placeholder="Book Author" name="author" <%if(title === "Edit Book"){%>value="<%= books.Author %>"<%}%>  required>
